@@ -33,7 +33,7 @@ app.use("/hamsters", read, post, put, dele);
 app.use('/hamsters', put) */
 // app.use("/fruits", fruits);
 
-const port = 1234;
-app.listen(port, () => {
-  console.log(port);
+const PORT = process.env.PORT || 1234;
+app.listen(PORT, () => {
+  console.log(PORT);
 });
